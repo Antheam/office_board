@@ -1,0 +1,18 @@
+Hi
+
+
+<% @stays.each do |stay|%>
+Stay:
+<br>
+Tenant:
+<%= stay.tenant.name%>
+<%= stay.studio.name%>
+<br>
+Monthly payment:
+<%= stay.studio.monthly_price%>
+<br>
+Total: <%= stay.studio.monthly_price * stay.length_of_stay %>
+<br>
+<br>
+<%end%>
+
